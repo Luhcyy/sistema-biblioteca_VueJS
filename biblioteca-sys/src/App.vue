@@ -6,29 +6,31 @@ import footerComponent from "./components/footerComponent.vue";
 </script>
 
 <template>
+<div class="wrapper">
 <nav>
   <navbarComponent></navbarComponent>
 </nav>
 
-  <main>
-    
+  <main class="content">
+    <RouterView />
   </main>
 
   <footer>
     <footerComponent></footerComponent>
   </footer>
-  <RouterView />
+</div>
 </template>
 
 <style>
-footer{
-  position: fixed;
-  bottom: 0;
-  width: 100%;
+
+.content{
+  flex: 1;
+}
+
+.wrapper{
   display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 56px;
+  flex-direction: column;
+  min-height: 100vh;
 }
 </style>
 
