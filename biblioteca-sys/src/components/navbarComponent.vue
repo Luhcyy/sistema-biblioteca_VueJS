@@ -9,14 +9,16 @@
     </button>
     <div class="collapse navbar-collapse justify-content-between" id="navbarNavAltMarkup">
       <div class="navbar-nav">
-        <router-link class="nav-link navigation-link" aria-current="page" to="/">Inicio</router-link>
+        <router-link class="nav-link navigation-link font-family" aria-current="page" to="/">Inicio</router-link>
+
+        <router-link class="nav-link navigation-link font-family" aria-current="page" to="/catálogo">Catálogo</router-link>
         
-        <router-link class="nav-link navigation-link" to="/sobre">Sobre</router-link>
+        <router-link class="nav-link navigation-link font-family" to="/sobre">Sobre</router-link>
       </div>
       <div class="navbar-nav">
-        <a class="nav-link text-white" aria-current="page" href="#">Login</a>
+        <router-link class="nav-link navigation-link font-family" aria-current="page" to="/login">Login</router-link>
         
-        <a class="nav-link text-white" href="#">Cadastro</a>
+        <router-link class="nav-link navigation-link font-family" to="/cadastro">Cadastro</router-link>
       </div>
     </div>
   </div>
@@ -27,12 +29,14 @@
 <style scoped>
 .custom-bg-dark {
     background-color: #a3130d;
+    box-shadow: 0 0.4rem 1rem -0.75rem hsla(0, 0%, 0%, 0.25);
 }
 
 .navbar-nav .navigation-link {
     position: relative;
-    margin: 0 10px;
+    margin: 0 20px;
     color: white;
+    font-weight: 500;
 }
 
 .navigation-link:active{
